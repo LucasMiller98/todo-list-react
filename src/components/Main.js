@@ -48,7 +48,6 @@ export class Main extends Component {
 
     const newtasks = [...tasks]
 
-    console.log(newtasks)
 
     if(index === -1) {
       this.setState({
@@ -63,6 +62,10 @@ export class Main extends Component {
         index: -1
       })
     }
+
+    this.setState({
+      newTask: ''
+    })
   }
 
   handleEdit = (event, index) => {
